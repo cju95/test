@@ -1,0 +1,194 @@
+.index{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    .head{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 450px;
+        padding-top: 110px;
+        .head_back{
+            position: absolute;
+            width: 100%;
+            height: 500px;
+            left: 0;
+            top: 0;
+            .head_back_img{
+                width: 100%;
+                height: 500px;
+            }
+        }
+        .head_right{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+        .my_img{
+            display: flex;
+            margin: 0 auto ;
+            z-index: 1;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;;
+            overflow: hidden;
+            border: 3PX solid white;
+            .my_img_box{
+                width: 160px;
+                height: 160px;
+                display: inline-block;
+            }
+
+        }
+        .my_name{
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            color: rgba(250,250,250,1);
+            z-index: 1;
+            margin:10px 0 70px;
+        }
+
+        .head_footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1;
+            width: 100%;
+            height: 100px;
+            background:rgba(255,255,255,1);
+            border-radius:20px 20px 0px 0px;
+            padding: 25px 0 10px;
+            .head_footer_item{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                .head_footer_count{
+                    font-size: 52px;
+                    color: rgba(45, 51, 62, 1);
+                } 
+                .head_footer_title{
+                    font-size: 20px;
+                    color: rgba(45, 51, 62, 1);
+                } 
+            }
+        }
+
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        background:rgba(250,250,250,1);
+        .my{
+            margin: 10px 0;
+            .my_item{
+                padding: 0  20px;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100px;
+                line-height: 100px;
+                background:rgba(255,255,255,1);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5px;
+                letter-spacing: 2px;
+                .my_item_img{
+                    width: 38px;
+                    height: 38px;
+                    margin: -3px 15px;
+                }
+                .my_item_activity{
+                    font-size:24px;
+                    color:rgba(162,167,178,1);
+
+                }
+
+            }
+           
+        }
+        .config{
+            // height: 430px;
+            .my_item{
+                padding: 0  20px;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100px;
+                line-height: 100px;
+                background:rgba(255,255,255,1);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5px;
+                letter-spacing: 2px;
+                .my_item_img{
+                    width: 35px;
+                    height: 38px;
+                    margin: -3px 15px;
+                }
+
+            }
+            .my_other{
+                // height: 220px;
+                background:rgba(255,255,255,1);
+            }
+        }
+        
+
+    }
+
+
+    //弹窗拍照
+   .isalert{
+        z-index: 1000;
+        position: absolute;
+         top: -1000PX;
+         left: 0;
+         height: 100%;
+         width: 100%;
+        background:rgba(130,134,140,0.6);
+        display: flex;
+        align-items: flex-end;
+        .alert_content{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            margin-bottom: 24px;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .isalert_content_top{
+                margin-bottom: 20px;  
+            }
+        .alert_button{
+            width: 600px;
+            height: 86px;
+            font-size: 30px;
+            line-height: 86px;
+            margin: 0 auto 4px;
+            text-align: center;
+        }
+        .alert_cancel{
+            letter-spacing: 30px;
+
+        }
+       }
+
+   }
+   .alert{
+    top: 0;
+   }
+   .isalert_content{
+    display: none !important;
+
+}
+
+  
+
+    
+}

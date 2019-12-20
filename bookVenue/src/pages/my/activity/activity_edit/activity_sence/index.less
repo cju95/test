@@ -1,0 +1,260 @@
+.activity_sence{
+    width: 100%;
+    min-height: 100%;
+    background:rgba(250,250,250,1);
+
+  
+
+    //一周日期
+    .scrollview_nowday{
+        width: 100%;
+        height: 110px;
+        white-space: nowrap;
+        border-top: 1px solid rgba(250, 250, 250, 1);
+        .scrollview_item{
+            overflow: hidden;
+            display: inline-block;
+            height: 110px;
+            width: 173px;
+            .scrollview_item_text{
+                display: block;
+                justify-content: center;
+                text-align: center;
+                font-size:26px;
+                color:rgba(162,167,178,1);  
+                line-height: 45px;
+                letter-spacing: 2px;
+            }
+            .scrollview_item_title{
+                font-size:34px;
+                line-height: 50px;
+            }
+        }
+        .scrollview_item_active{
+            border-bottom:1px solid rgba(37,198,138,1);
+            .scrollview_item_activeText{
+                color:rgba(37,198,138,1);
+            }
+
+        }
+    }
+    //时间,场地
+    .scrollview_sence_contaier{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 950px;
+        overflow: hidden;
+        .scrollview_sence_head_item{
+            width: 120px;
+            height: 50px;
+            z-index: 12222;
+            background:rgba(250,250,250,1);
+        }
+        .scrollview_sence_head{
+            display: flex;
+            flex-wrap: nowrap;
+            position: absolute;
+            left: 120px;
+            top: 0;
+            .scrollview_sence_item{
+                width:97px;
+                height:50px;
+                margin-right: 10px;
+                text-align: center;
+                border-radius:2px;
+                font-size:24px;
+                line-height: 70px;
+                color:rgba(151,151,151,1);
+            }
+        }
+
+
+        .scrollview_time_contaier{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            position: relative;
+                .scrollview_time_left{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 120px;
+                    .scrollview_time_left_item{
+                        width:100%;
+                        height:65px;
+                        font-size:24px;
+                        font-weight:bold;
+                        line-height: 65px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        color:rgba(151,151,151,1);
+                    }
+                }
+            
+            
+            .scrollview_time_right{
+                margin-left: 120px;
+                height: 510px;
+                position: relative;
+                margin-top: 10px;
+                .scrollview_item{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin-bottom: 10px;
+                    // width: 1200px;
+                    // display: inline-block;
+                    .scrollview_right_item{
+                        width:97px;
+                        height:65px;
+                        margin-right: 10px;
+                        box-sizing: border-box;
+                        background:rgba(228,228,228,1);
+                        border-radius:2px;
+                        text-align: center;
+ 
+                        .scrollview_right_itemText{
+                            line-height: 65px;
+                            font-size:26px;
+                            font-weight:bold;
+                            color:rgba(255,255,255,1);
+
+                        }
+                      
+                    }
+                    .scrollview_right_chooseItem{
+                        background:rgba(37,198,138,1);
+                    }
+                    .scrollview_right_activeItem{
+                        background:rgba(115,112,203,1);
+
+                    }
+                   
+                }
+                .scrollview_time_right_title{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+
+                }
+            }
+        }
+        .scrollview_sence_footer{
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 110px;
+            box-sizing: border-box;
+            .scrollview_sence_footer_item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width:100px;
+                height:100px;
+                .scrollview_sence_footer_color{
+                    width:60px;
+                    height:40px;
+                    background:rgba(228,228,228,1);
+                    border-radius:2px;                     
+                }
+                .scrollview_sence_footer_text{
+                    text-align: center;
+                    letter-spacing: 2px;
+                    font-size:22px;
+                    line-height: 40px;
+                    color:rgba(162,167,178,1);
+                }
+            }
+        }
+
+    }
+
+//底部内容
+    .activity_sence_footer{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background:rgba(255,255,255,1);
+        flex-direction: column;
+        padding: 30px 15px;
+        box-sizing: border-box;
+        .activity_sence_select{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            .activity_sence_select_item{
+                width:23%;
+                height:90px;
+                background:rgba(255,255,255,1);
+                border:2px solid rgba(228,228,228,1);
+                border-radius:10px;
+                display: flex;
+                flex-direction: column;
+                margin: 5px;
+                .activity_sence_select_item_time{
+                    font-size:24px;
+                    color:rgba(255,255,255,1);
+                    text-align: center;
+                    width:100%;
+                    height:40px;
+                    background:rgba(115,112,203,1);
+                    border-radius:10px 10px 0px 0px;
+                }
+                .activity_sence_select_item_content{
+                    font-size:24px;
+                    color:rgba(115,112,203,1);
+                    text-align: center;
+                    line-height: 50px;
+                }
+            }
+        }
+        .activity_sence_submit{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+            letter-spacing: 2px;
+            margin-top: 15px;
+             .activity_sence_submit_price{
+                font-size:38px;
+                font-weight:bold;
+                color:rgba(115,112,203,1);  
+                margin-right: 5px;
+                line-height: 70px;
+             }
+             .activity_sence_submit_text{
+                font-size:24px;
+                color:rgba(187,191,198,1);
+                line-height: 70px;
+             }
+             .activity_sence_button{
+                width:260px;
+                height:70px;
+                line-height: 70px;
+                background:rgba(37,198,138,1);
+                border-radius:35px;
+                font-size:28px;
+                color:rgba(255,255,255,1);
+
+                
+             }
+        }
+    }
+
+    //场地模块颜色
+      .scrollview_sence_footer_green{
+        background:rgba(37,198,138,1) !important;
+    }
+    .scrollview_sence_footer_purple{
+        background:rgba(115,112,203,1) !important;
+    }
+}

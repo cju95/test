@@ -1,0 +1,53 @@
+.navbar{
+    height: 80px;
+
+    position: sticky;
+    top: 0;
+ 
+    // padding: 0 15px;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 122;
+
+    .navbar_container{
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #fff;
+        padding: 0 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 80px;
+        .navbar_title{
+            text-align: center;
+        }
+        .navbar_right{
+            position: relative;
+            .navbar_right_share{
+                position: absolute;
+                right: 0;
+                bottom: -88px;
+                width:225px;
+                height:88px;
+                background-image: url('../../assets/images/index/share.png') ;
+                background-size: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .navbar_right_share_img{
+                    width: 28px;
+                    height: 28px;
+                    margin-right: 20px;
+                }
+                .navbar_right_share_text{
+                    font-size:26px;
+                    color:rgba(255,254,254,1);
+    
+                }
+    
+            }
+        }
+    }
+    
+    
+}

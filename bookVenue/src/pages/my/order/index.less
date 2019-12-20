@@ -1,0 +1,193 @@
+.order{
+    width: 100%;
+    height: 100%;
+    background:rgba(250,250,250,1);
+
+    
+      //弹窗
+    .at-curtain__btn-close--bottom{
+        display: none;
+    }
+    .alert_page{
+        width:660px;
+        height:200px;
+        background:rgba(255,255,255,1);
+        border-radius: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 2px;
+        margin: -200px 0  0 -30px ;
+            .alert_top{
+                font-size:26px;
+                color:rgba(127,127,127,1);
+                line-height:42px;
+                padding: 41px 31px;
+            }
+            .alert_footer{
+                font-size:28px;
+                color:rgba(38,198,138,1);
+                line-height:42px;
+                display: flex;
+                justify-content: flex-end;
+                margin: 15px 20px 45px ;
+            }
+
+    }
+    //黑色透明弹窗
+    .order_toast{
+        border-radius:10px;
+        z-index: 100;
+        .toast-body--text {
+            width: 500px;
+            box-sizing: border-box;
+            background:rgba(0,0,0,1);
+            opacity:0.75;
+            border-radius:10px;
+            padding: 76px 124px;
+            font-size:30px;
+            letter-spacing: 3px;
+            color:rgba(255,255,255,1);
+       
+        }
+    }
+    .order_tabs{
+        min-height: 500px;
+        .order_tabs_item{
+            width: 100%;
+            height:80px;
+            background:rgba(255,255,255,1);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            .order_tabs_text{
+                width: 25%;
+                line-height: 79px;
+                font-size:28px;
+                color:rgba(162,167,178,1);
+                letter-spacing: 3px;
+               
+            }
+            .order_tabs_active{
+                color:rgba(45,51,62,1);
+                position: relative;
+                .order_tabs_line{
+                    width: 40px;
+                    height: 1px;
+                    border-bottom: 1px solid black; 
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    margin-left: 75px;
+                }
+
+            }
+
+        }
+        
+        .order_pane{
+            display: none;
+            padding-top: 8px;
+            .finished_item{
+                width:100%;
+                // height:200px;
+                padding: 20px;
+                margin-bottom: 10px;
+                background:rgba(255,255,255,1);
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                letter-spacing: 3px;
+                .finished_item_title{
+                    font-size:26px;
+                    font-weight:bold;
+                    color:rgba(45,51,62,1);
+                    line-height: 60px;
+                }
+                .finished_item_common{
+                    display: flex;
+                    justify-content: space-between;
+                    .finished_item_state{
+                        font-size:26px;
+                        color:rgba(36,198,138,1);
+                        line-height: 60px;
+                    }
+                    .finished_item_data{
+                        margin: 0 10px 0 20px;
+                    }
+                    .finished_item_price{
+                        font-size:28px;
+                        font-weight:bold;
+                        color:rgba(45,51,62,1);
+                        margin-right: 20px;
+                    }
+                }
+                .finished_item_text{
+                    font-size:24px;
+                    color:rgba(45,51,62,1);
+                    line-height: 50px;
+
+                }
+                .finished_item_footer{
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: 22px 0 18px;
+                    .cansole_button{
+                        width:150px;
+                        height:45px;
+                        border:1px solid rgba(162,167,178,1);
+                        border-radius:23px;
+                        font-size:24px;
+                        line-height: 45px;
+                        color:rgba(162,167,178,1);
+                        background:rgba(255,255,255,1);
+                        box-sizing: content-box;
+                    }
+                    .pay_button{
+                        width:150px;
+                        height:45px;
+                        background:rgba(36,198,138,1);
+                        border-radius:23px;
+                        font-size:24px;
+                        line-height: 45px;
+                        color:rgba(255,255,255,1);
+                        margin-left: 20px;
+                        box-sizing: content-box;
+                    }
+                }
+                .finished_item_infor{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 20px;
+                    border-top:3px solid rgba(250,250,250,0.8);
+            
+                    .finished_item_orderNum{
+                        font-size:28px;
+                        color:rgba(45,51,62,1);
+                        text-align: center;
+                        line-height: 60px;
+                    }
+                    .finished_item_code{
+                        width:200px;
+                        height:201px;
+                        margin: 10px auto 20px;
+
+                    }
+                }
+            }
+        }
+        .order_pane_active{
+            display: block;
+        }
+
+    }
+    .at-tabs{
+        width: 100%;
+        zoom:0;
+        display: inline-block;
+        overflow:auto;
+    }
+
+
+}

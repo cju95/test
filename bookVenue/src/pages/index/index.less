@@ -1,0 +1,118 @@
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+
+}
+
+.index{
+    background:rgba(250,250,250,1);
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /*隐藏滚动条*/
+ 
+
+    .nav_test{
+        width: 100%;
+        background:white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 12;
+    }
+    .sticky{
+       //  position: sticky !important;
+       border-top: 1px solid rgba(242,243,244,1);
+        .at-tab-bar__item{
+            color: #A2A7B2
+        }
+        .at-tab-bar__item--active{
+            color: #333C4A;
+        }
+    }
+    .activitys{
+        margin-bottom: 135px;
+        
+        .activity_item{
+            display: flex;
+            flex-direction: column;
+            font-size: 24px;
+            color:rgba(45,51,62,1);
+            background:rgba(255,255,255,1);
+            margin-top: 20px;
+            .activity_item_common{
+                height: 70px;
+                line-height: 70px;  
+                padding:  0 20px;
+            }
+            .activity_day{
+                font-size: 30px;
+                text-align: center;
+                color:rgba(162,167,178,1);
+                height: 70px;
+                line-height: 70px;
+                padding:  0 20px;
+                border:1px solid rgba(250,250,250,1);
+
+            }
+            .activity_timeStart{
+                font-size:30px;
+                color:rgba(221,0,27,1);
+            }
+            .activity_tag{
+                width:28px;
+                height:28px;
+                background:rgba(243,184,26,1);
+                border-radius:4px;  
+                color: rgba(255, 255, 255, 1);
+                margin: 0 12px;
+                padding: 3px;
+            }
+            .activity_address{
+                font-size:28px;
+            }
+            .activity_detial{
+                font-size:26px;
+                height: 70px;
+                line-height: 70px;
+                padding:  0 20px;
+                .activity_sence{
+                    margin-right: 24px;
+                }
+            }
+            .activity_order{
+                font-size:26px;
+                color:rgba(162,167,178,1);
+                margin-right: 12px;
+            }
+
+            .activity_img{
+                width: 68px;
+                height: 68px;
+            }
+
+            .activity_item_footer{
+                display: flex;
+                justify-content: space-between;
+                padding:  0 20px;
+                height: 70px;
+                line-height: 70px;  
+                color:rgba(162,167,178,1);
+                .activity_item_footer_img{
+                    width: 37px;
+                    height: 29px;
+                    margin: 20px;
+                }
+                    .activity_activityState{
+                        font-size: 26px;
+                        color:rgba(243,185,19,1);
+                        margin-left: 20px;
+                    }
+
+            }
+
+        }
+    }
+}
